@@ -1,0 +1,13 @@
+""" ITERATOR VS ITERABLE """
+"""
+if we only use iterator class it would work just fine but when u need to iterate over one object multiple times it won't work properly 
+it will just iterate over the object one time and the iterator will be exhausted. 
+this problem can be catered by two means:
+1)  by making a RESET function where u have to put self.count=0 in the function.
+    its like starting the counter from the start or in simple words resetting the counter.
+    using the reset function u would have to manually call the reset function in main.py everytime the iterator is exhausted.
+2)  by making a separate ITERABLE CLASS which provides a separate object/reader everytime.
+    the iterable class is capable of returning an iterator when passed to iter() or in a for loop.
+    by making a separate iterable class u don't need a reset function and u don't have to call .reset() everytime u need to iterate over the same object
+
+"""
